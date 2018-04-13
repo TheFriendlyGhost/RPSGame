@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+  	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  	crossorigin="anonymous"></script>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" id="header">
+			<div class="col-sm-6 center-col text-center">Rock Paper Scissors</div>
+		</div>
+
+		<div class="row mb-5">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-3 center-col">
+				<form role="form top-buffer" id="form">
+		          	<div class="form-group">
+		            	<input type="text" class="form-control" id="new-player">
+		        	</div>
+				</form>
+			</div>
+			
+			<div class="col-sm-1 center-col">
+				<button type="submit" class="btn btn-primary" id="add-player"><i class="fas fa-plus"></i>  Add User </button>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-7 center-col align-center">
+				<div class="play-box float-left" id="player-one-box">
+					<div class="row">
+						<h2 id="player-one" class="ml-3">Player One</h2>
+					</div>
+          <div class="row">
+            <button class="btn btn-primary ml-3 mb-1 choiceBtn">Rock</button>
+          </div>
+          <div class="row">
+            <button class="btn btn-primary ml-3 mb-1 choiceBtn">Paper</button>
+          </div>
+          <div class="row">
+            <button class="btn btn-primary ml-3 mb-1 choiceBtn">Scissors</button>
+          </div>
+				</div>
+				<div class="play-box float-left" id="play-space">
+          <div id="waiting-player1">Waiting on player one</div>
+          <div id="waiting-player2">Waiting on player two</div>
+          <div id="result"></div>    
+          <div id="turn" style="display: none;"></div>
+        </div>
+				<div class="play-box float-left" id="player-two-box">
+					<div class="row">
+            <h2 id="player-two" class="ml-3">Player Two</h2>
+          </div>
+          <div class="row">
+            <button class="btn btn-primary ml-3 mb-1 choiceBtn">Rock</button>
+          </div>
+          <div class="row">
+            <button class="btn btn-primary ml-3 mb-1 choiceBtn">Paper</button>
+          </div>
+          <div class="row">
+            <button class="btn btn-primary ml-3 mb-1 choiceBtn">Scissors</button>
+          </div>
+        </div>
+				</div>
+			</div>
+
+      <div class="row">
+        <div class="col-sm-8 center-col">
+          <div id="chatroom"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 center-col"> 
+          <div class="chatInput">
+            <div class="chatPanel"> 
+              <form id="chat-form">
+                <textarea rows="1" cols="93" type="text" id="chat-input"></textarea>
+                <input id="chat-send" type="submit" value="Send">
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>

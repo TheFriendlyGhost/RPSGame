@@ -1,0 +1,33 @@
+.center-col{
+	margin:0 auto;
+}
+
+#header{
+	font-size: 45px;
+	background-color: teal;
+	margin-bottom: 30px;
+}
+
+.play-box{
+	border: 3px solid black;
+	height: 200px;
+	width: 200px;
+	margin-right: 20px;
+}
+
+#chatroom {
+	margin-top: 30px;
+	height: 150px;
+	width: 100%;
+	overflow: auto;
+	text-align: left;
+  	border-radius: 10px;
+  	background-color: #cdd9ea;
+	font-size: 1em;
+	color: #084596;
+	padding: 1em 1em 1em 1em;
+}
+
+.chatInput{
+	margin-top: 10px;
+}
